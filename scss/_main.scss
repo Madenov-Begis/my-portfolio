@@ -1,0 +1,46 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.to-top-circle{
+    position: fixed;
+    display: none;
+    padding: 10px;
+    bottom: 50px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    opacity: .7;
+    border-radius: 50%;
+    transition: all .3s;
+    background-color: #facf0f;
+    a{
+        display: inline-block;       
+        span{
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+    &:hover{
+        transform: scale(1.1);
+    }
+}
